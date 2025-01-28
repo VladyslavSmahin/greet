@@ -1,0 +1,141 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to right, #312b29, #090601);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    animation: fadeOut 5s forwards;
+    background: linear-gradient(to right, #b4aba8, #f1eee8);
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.main-content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #312b29, #090601);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.achieves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.done{
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+.done .done_1{
+color: #158815;
+}
+.agree{
+    border: 1px white solid;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #8d8888;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.random-button {
+    font-size: 20px;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: #736e6e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: absolute;
+}
+.approval-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #312b29, #090601);
+    flex-direction: column;
+    animation: fadeIn 2s forwards;
+}
+
+.approval-text {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.approval-link {
+    color: #d0ccbc;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.approval-link:hover {
+    text-decoration: underline;
+}
